@@ -1,7 +1,7 @@
 {
     "name" : "commondir",
     "version" : "0.0.0",
-    "description" : "Uppermost common parent for file paths",
+    "description" : "Compute the closest common parent for file paths",
     "main" : "index.js",
     "directories" : {
         "lib" : ".",
