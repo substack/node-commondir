@@ -16,6 +16,13 @@ exports.common = function () {
         commondir([ '/x/y/z/w', '/xy/z', '/x/y/z' ]),
         '/'
     );
+    
+    assert.throws(function () {
+        assert.equal(
+            commondir([ '/x/y/z/w', 'qrs', '/x/y/z' ]),
+            '/'
+        );
+    });
 };
 
 exports.base = function () {
