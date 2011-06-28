@@ -10,7 +10,7 @@ module.exports = function (basedir, relfiles) {
         var files = basedir;
     }
     
-    return files.slice(1).reduce(function (ps, file) {
+    var res = files.slice(1).reduce(function (ps, file) {
         if (!file.match(/^\//)) {
             throw new Error('relative path without a basedir');
         }
@@ -22,5 +22,7 @@ module.exports = function (basedir, relfiles) {
             i++
         );
         return ps.slice(0,i);
-    }, files[0].split(/\/+/)).join('/');
+    }, files[0].split(/\/+/));
+    
+    return res.length > 1 ? res.join('/') : '/'
 };
