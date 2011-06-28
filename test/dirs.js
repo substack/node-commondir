@@ -25,7 +25,7 @@ exports.base = function () {
     );
     
     assert.equal(
-        commondir('/a/b', [ 'c', '../d', '../../a/b/e' ]),
+        commondir('/a/b', [ 'c', '../b/.', '../../a/b/e' ]),
         '/a/b'
     );
     
