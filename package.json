@@ -1,6 +1,6 @@
 {
   "name": "commondir",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "compute the closest common parent for file paths",
   "main": "index.js",
   "dependencies": {},
