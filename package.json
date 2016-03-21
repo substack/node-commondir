@@ -10,6 +10,9 @@
   "scripts": {
     "test": "tape test/*.js"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/substack/node-commondir.git"
