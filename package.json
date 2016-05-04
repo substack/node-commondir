@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "compute the closest common parent for file paths",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {},
   "devDependencies": {
     "tape": "^3.5.0"
